@@ -8,7 +8,7 @@
 
 const grupos = {
 
-    amizades: "https://chat.whatsapp.com/",
+    amizades: "https://chat.whatsapp.com/Hkz0XCvpHiiGzY5pS6WlKi?s=cl&p=a&mlu=4",
 
     games: "https://chat.whatsapp.com/",
 
