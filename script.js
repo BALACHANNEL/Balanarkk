@@ -1,48 +1,144 @@
-// ========================================
-// LINKS DOS GRUPOS DE WHATSAPP
-// ========================================
-
-// Coloque os links reais dos seus grupos aqui.
-// Exemplo:
-// "https://chat.whatsapp.com/SEU-CODIGO"
+// ==========================================
+// GRUPOS DA BALANARKK
+// ==========================================
 
 const grupos = {
 
-    amizades: "https://chat.whatsapp.com/Hkz0XCvpHiiGzY5pS6WlKi?s=cl&p=a&mlu=4",
+    amizades: [
+        {
+            nome: "Grupo de Amizades 1",
+            link: "https://chat.whatsapp.com/"
+        },
+        {
+            nome: "Grupo de Amizades 2",
+            link: "https://chat.whatsapp.com/"
+        }
+    ],
 
-    games: "https://chat.whatsapp.com/",
+    games: [
+        {
+            nome: "Grupo de Games 1",
+            link: "https://chat.whatsapp.com/"
+        }
+    ],
 
-    entretenimento: "https://chat.whatsapp.com/",
+    entretenimento: [
+        {
+            nome: "Grupo de Entretenimento 1",
+            link: "https://chat.whatsapp.com/"
+        }
+    ],
 
-    negocios: "https://chat.whatsapp.com/",
+    negocios: [
+        {
+            nome: "Grupo de Negócios 1",
+            link: "https://chat.whatsapp.com/"
+        }
+    ],
 
-    estudos: "https://chat.whatsapp.com/",
+    estudos: [
+        {
+            nome: "Grupo de Estudos 1",
+            link: "https://chat.whatsapp.com/"
+        }
+    ],
 
-    outros: "https://chat.whatsapp.com/"
+    outros: [
+        {
+            nome: "Grupo de Outros 1",
+            link: "https://chat.whatsapp.com/"
+        }
+    ]
 
 };
 
 
-// ========================================
-// BOTÕES "VER GRUPOS"
-// ========================================
+// ==========================================
+// CONTAR OS GRUPOS AUTOMATICAMENTE
+// ==========================================
+
+function atualizarContadores() {
+
+    const categorias = [
+        "amizades",
+        "games",
+        "entretenimento",
+        "negocios",
+        "estudos",
+        "outros"
+    ];
+
+    categorias.forEach(function(categoria) {
+
+        const quantidade = grupos[categoria].length;
+
+        const contador = document.getElementById(
+            "contador-" + categoria
+        );
+
+        if (contador) {
+
+            contador.textContent =
+                quantidade + (quantidade === 1 ? " grupo" : " grupos");
+
+        }
+
+    });
+
+}
+
+
+// ==========================================
+// BOTÕES DAS CATEGORIAS
+// ==========================================
 
 function entrarGrupo(categoria) {
 
-    const link = grupos[categoria];
+    const lista = grupos[categoria];
 
-    // Verifica se existe um link válido
+    if (!lista || lista.length === 0) {
+
+        alert("💜 Ainda não existem grupos nesta categoria.");
+
+        return;
+
+    }
+
+    // Se houver apenas um grupo, abre diretamente
+    if (lista.length === 1) {
+
+        window.open(lista[0].link, "_blank");
+
+        return;
+
+    }
+
+    // Se houver vários grupos
+    let mensagem = "💜 GRUPOS DISPONÍVEIS\n\n";
+
+    lista.forEach(function(grupo, index) {
+
+        mensagem +=
+            (index + 1) + ". " + grupo.nome + "\n";
+
+    });
+
+    const escolha = prompt(
+        mensagem +
+        "\nDigite o número do grupo que deseja entrar:"
+    );
+
+    const numero = parseInt(escolha);
+
     if (
-        link &&
-        link !== "https://chat.whatsapp.com/"
+        !isNaN(numero) &&
+        numero >= 1 &&
+        numero <= lista.length
     ) {
 
-        window.open(link, "_blank");
-
-    } else {
-
-        alert(
-            "💜 Os grupos desta categoria ainda estão sendo cadastrados!"
+        window.open(
+            lista[numero - 1].link,
+            "_blank"
         );
 
     }
@@ -50,55 +146,15 @@ function entrarGrupo(categoria) {
 }
 
 
-// ========================================
-// ANIMAÇÃO DOS ELEMENTOS
-// ========================================
+// ==========================================
+// INICIAR CONTADORES
+// ==========================================
 
-const elementos = document.querySelectorAll(
-    ".group-card, .panel, .about, .stats, .cta"
-);
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
 
+        atualizarContadores();
 
-const observer = new IntersectionObserver(
-
-    function(entries) {
-
-        entries.forEach(function(entry) {
-
-            if (entry.isIntersecting) {
-
-                entry.target.style.opacity = "1";
-
-                entry.target.style.transform =
-                    "translateY(0)";
-
-            }
-
-        });
-
-    },
-
-    {
-        threshold: 0.12
     }
-
 );
-
-
-// ========================================
-// ATIVA A ANIMAÇÃO
-// ========================================
-
-elementos.forEach(function(elemento) {
-
-    elemento.style.opacity = "0";
-
-    elemento.style.transform =
-        "translateY(20px)";
-
-    elemento.style.transition =
-        "opacity 0.7s ease, transform 0.7s ease";
-
-    observer.observe(elemento);
-
-});
