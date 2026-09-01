@@ -691,3 +691,85 @@ footer a {
 
   background: #dddddd;
 }
+
+/* ========================= */
+/* ORGANIZAÇÃO DO PAINEL */
+/* ========================= */
+
+.admin-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 25px;
+}
+
+.admin-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 20px;
+}
+
+/* TODOS OS CAMPOS */
+
+.admin-box input,
+.admin-box textarea {
+  width: 100% !important;
+
+  display: block;
+
+  padding: 16px;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* DESCRIÇÃO */
+
+.admin-box textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* BOTÃO */
+
+.add-button {
+  width: 100% !important;
+
+  display: block;
+
+  margin-top: 10px;
+
+  padding: 17px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: black;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
