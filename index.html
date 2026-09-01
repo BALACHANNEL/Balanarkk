@@ -1,505 +1,613 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-    <title>Balanarkk | Aliança</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <title>𝕭𝖆𝖑𝖆𝖓𝖆𝖗𝖐𝖐</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!-- ESTRELAS -->
-    <div class="star s1"></div>
-    <div class="star s2"></div>
-    <div class="star s3"></div>
-    <div class="star s4"></div>
-    <div class="star s5"></div>
+  <!-- FUNDO -->
+  <div class="background"></div>
 
 
-    <!-- MENU -->
-    <header>
+  <!-- MENU -->
 
-        <a href="#inicio" class="logo">
-            Balanarkk
-            <span>ALIANÇA</span>
-        </a>
+  <header>
 
-        <nav>
-            <a href="#inicio">INÍCIO</a>
-            <a href="#sobre">SOBRE</a>
-            <a href="#grupos">GRUPOS</a>
-            <a href="#regras">REGRAS</a>
-            <a href="#ranking">RANKING</a>
-        </nav>
+    <nav class="navbar">
 
-        <a
-            href="https://whatsapp.com/channel/0029VbEJtFyBvvsjfRTArO0H"
-            target="_blank"
-            class="header-button">
-            ENTRAR NA ALIANÇA
-        </a>
-
-    </header>
+      <a href="#inicio" class="logo">
+        𝕭𝖆𝖑𝖆𝖓𝖆𝖗𝖐𝖐
+      </a>
 
 
-    <!-- HERO -->
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="#inicio">Início</a>
+
+        <a href="#grupos">Grupos</a>
+
+        <a href="#canais">Canais</a>
+
+        <a href="#divulgacao">Divulgação</a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- INÍCIO -->
+
+  <main>
+
+
     <section class="hero" id="inicio">
 
-        <div class="hero-text">
+      <div class="hero-content">
 
-            <p class="eyebrow">
-                ✦ SEJA BEM-VINDO À ✦
-            </p>
-
-            <h1>Balanarkk</h1>
-
-            <h2>ALIANÇA DE GRUPOS</h2>
-
-            <p class="description">
-                União, força e crescimento.
-                Conectamos grupos de WhatsApp para
-                evoluir juntos. Junte-se à nossa
-                aliança e faça parte dessa família!
-            </p>
-
-            <div class="buttons">
-
-                <a href="#grupos" class="button primary">
-                    ENTRAR AGORA
-                </a>
-
-                <a href="#grupos" class="button secondary">
-                    VER GRUPOS
-                </a>
-
-            </div>
-
-        </div>
+        <p class="subtitle">
+          BEM-VINDO À
+        </p>
 
 
-        <!-- LOGO -->
-        <div class="hero-logo">
+        <h1>
+          𝕭𝖆𝖑𝖆𝖓𝖆𝖗𝖐𝖐
+        </h1>
 
-            <div class="crown">♛</div>
 
-            <div class="big-letter">
-                B
-            </div>
+        <p class="description">
 
-            <div class="logo-name">
-                Balanarkk
-            </div>
+          Uma aliança criada para conectar grupos,
+          canais e comunidades em um único lugar.
 
-        </div>
+        </p>
+
+
+        <!-- TROQUE O LINK DO WHATSAPP AQUI -->
+
+        <a
+          href="https://whatsapp.com/"
+          target="_blank"
+          class="main-button"
+        >
+
+          ENTRAR NA ALIANÇA
+
+        </a>
+
+
+        <a href="#grupos" class="explore">
+
+          Explorar ↓
+
+        </a>
+
+      </div>
 
     </section>
+
 
 
     <!-- ESTATÍSTICAS -->
-    <section class="stats">
 
-        <div>
-            <strong><span id="total-grupos">0</span>+</strong>
-            <span>GRUPOS</span>
+    <section class="stats-section">
+
+      <div class="stats-container">
+
+
+        <div class="stat-card">
+
+          <span id="totalGrupos">
+            0
+          </span>
+
+          <p>
+            GRUPOS
+          </p>
+
         </div>
 
-        <div>
-            <strong><span id="total-membros">0</span>+</strong>
-            <span>MEMBROS</span>
+
+
+        <div class="stat-card">
+
+          <span id="totalCanais">
+            0
+          </span>
+
+          <p>
+            CANAIS
+          </p>
+
         </div>
 
-        
-        <div class="stat">
-    <strong><span id="total-categorias">0</span>+</strong>
-    <span>CATEGORIAS</span>
+
+
+        <div class="stat-card">
+
+          <span id="totalDivulgacao">
+            0
+          </span>
+
+          <p>
+            DIVULGAÇÃO
+          </p>
+
         </div>
 
-        <div class="stat">
-    <strong><span id="nivel-confianca">0</span>%</strong>
-    <span>CONFIANÇA</span>
-        </div>
+
+      </div>
 
     </section>
 
-
-    <!-- SOBRE -->
-    <section class="about" id="sobre">
-
-        <div class="about-symbol">
-            ♜
-        </div>
-
-        <div>
-
-            <p class="eyebrow">
-                ✦ SOBRE A ALIANÇA ✦
-            </p>
-
-            <h2>
-                Mais que grupos,<br>
-                uma família.
-            </h2>
-
-            <p class="description">
-                A Balanarkk nasceu com o objetivo de
-                unir grupos de WhatsApp em um só lugar.
-                Aqui prezamos pelo respeito, parceria
-                e crescimento mútuo entre todos.
-            </p>
-
-            <div class="features">
-
-                <p>♟ Seleção rigorosa de grupos</p>
-
-                <p>♟ Ambiente seguro e organizado</p>
-
-                <p>✦ Crescimento e visibilidade para todos</p>
-
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- GRUPOS -->
-    <section class="groups" id="grupos">
 
-        <p class="eyebrow">
-            ✦ NOSSAS CATEGORIAS ✦
+    <section class="section" id="grupos">
+
+      <div class="section-title">
+
+        <p>
+          COMUNIDADE
         </p>
 
         <h2>
-            Encontre o grupo ideal para você
+          GRUPOS
         </h2>
 
+      </div>
 
-        <div class="group-grid">
 
 
-            <!-- AMIZADES -->
-            <div class="group-card">
+      <div class="cards-container" id="gruposContainer">
 
-                <div class="icon">💬</div>
 
-                <h3>Amizades</h3>
+        <!-- ========================= -->
+        <!-- GRUPO 1 -->
+        <!-- ========================= -->
 
-                <p><span id="contador-amizades">0 grupos</span></p>
+        <div class="card grupo-card">
 
-                <button onclick="entrarGrupo('amizades')">
-                    VER GRUPOS
-                </button>
+          <div class="card-image">
 
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
+              alt="Grupo"
+            >
 
+          </div>
 
-            <!-- GAMES -->
-            <div class="group-card">
 
-                <div class="icon">🎮</div>
+          <div class="card-content">
 
-                <h3>Games</h3>
+            <h3>
+              Nome do Grupo
+            </h3>
 
-                <p><span id="contador-games">0 grupos</span></p>
-
-                <button onclick="entrarGrupo('games')">
-                    VER GRUPOS
-                </button>
-
-            </div>
-
-
-            <!-- ENTRETENIMENTO -->
-            <div class="group-card">
-
-                <div class="icon">🎬</div>
-
-                <h3>Entretenimento</h3>
-
-                <p><span id="contador-entretenimento">0 grupos</span></p>
-
-                <button onclick="entrarGrupo('entretenimento')">
-                    VER GRUPOS
-                </button>
-
-            </div>
-
-
-            <!-- NEGÓCIOS -->
-            <div class="group-card">
-
-                <div class="icon">💰</div>
-
-                <h3>Negócios</h3>
-
-                <p><span id="contador-negocios">0 grupos</span></p>
-
-                <button onclick="entrarGrupo('negocios')">
-                    VER GRUPOS
-                </button>
-
-            </div>
-
-
-            <!-- ESTUDOS -->
-            <div class="group-card">
-
-                <div class="icon">🎓</div>
-
-                <h3>Estudos</h3>
-
-                <p><span id="contador-estudos">0 grupos</span></p>
-
-                <button onclick="entrarGrupo('estudos')">
-                    VER GRUPOS
-                </button>
-
-            </div>
-
-
-            <!-- OUTROS -->
-            <div class="group-card">
-
-                <div class="icon">✦</div>
-
-                <h3>Outros</h3>
-
-                <p><span id="contador-outros">0 grupos</span></p>
-
-                <button onclick="entrarGrupo('outros')">
-                    VER GRUPOS
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- REGRAS E RANKING -->
-    <section class="columns">
-
-
-        <!-- REGRAS -->
-        <div class="panel" id="regras">
-
-            <p class="eyebrow">
-                ✦ REGRAS PRINCIPAIS ✦
-            </p>
-
-            <div class="rule">
-
-                <b>01</b>
-
-                <span>
-                    Respeite todos os membros.
-                </span>
-
-            </div>
-
-
-            <div class="rule">
-
-                <b>02</b>
-
-                <span>
-                    Proibido conteúdo adulto e ilegal.
-                </span>
-
-            </div>
-
-
-            <div class="rule">
-
-                <b>03</b>
-
-                <span>
-                    Sem spam ou flood.
-                </span>
-
-            </div>
-
-
-            <div class="rule">
-
-                <b>04</b>
-
-                <span>
-                    Divulgue apenas com permissão.
-                </span>
-
-            </div>
-
-
-            <div class="rule">
-
-                <b>05</b>
-
-                <span>
-                    Colabore com a aliança.
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- RANKING -->
-        <div class="panel" id="ranking">
-
-            <p class="eyebrow">
-                ✦ RANKING DE GRUPOS ✦
-            </p>
-
-
-            <div class="rank">
-
-                <b>1</b>
-
-                <span>👑</span>
-
-                <div>
-
-                    <strong>
-                        Os Imbatíveis
-                    </strong>
-
-                    <small>
-                        1.290 membros
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <div class="rank">
-
-                <b>2</b>
-
-                <span>👤</span>
-
-                <div>
-
-                    <strong>
-                        Resenha Geral
-                    </strong>
-
-                    <small>
-                        980 membros
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <div class="rank">
-
-                <b>3</b>
-
-                <span>👥</span>
-
-                <div>
-
-                    <strong>
-                        Amizade Verdadeira
-                    </strong>
-
-                    <small>
-                        870 membros
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <div class="rank">
-
-                <b>4</b>
-
-                <span>✦</span>
-
-                <div>
-
-                    <strong>
-                        League of Chat
-                    </strong>
-
-                    <small>
-                        760 membros
-                    </small>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CHAMADA FINAL -->
-    <section class="cta">
-
-        <div>
-
-            <p class="eyebrow">
-                ✦ FAÇA PARTE ✦
-            </p>
-
-            <h2>
-                Pronto para fazer parte?
-            </h2>
 
             <p>
-                Entre agora para a Balanarkk!
+
+              Coloque aqui uma pequena descrição
+              sobre o seu grupo.
+
             </p>
+
+
+            <div class="members">
+
+              👥 100 membros
+
+            </div>
+
+
+            <!-- TROQUE O LINK -->
+
+            <a
+              href="https://chat.whatsapp.com/"
+              target="_blank"
+              class="card-button"
+            >
+
+              ENTRAR
+
+            </a>
+
+          </div>
 
         </div>
 
 
-        <a
-            href="https://whatsapp.com/channel/0029VbEJtFyBvvsjfRTArO0H"
-            target="_blank"
-            class="button primary">
 
-            ENTRAR NA ALIANÇA
 
-        </a>
+        <!-- ========================= -->
+        <!-- GRUPO 2 -->
+        <!-- ========================= -->
+
+        <div class="card grupo-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+              alt="Grupo"
+            >
+
+          </div>
+
+
+          <div class="card-content">
+
+            <h3>
+              Nome do Grupo
+            </h3>
+
+
+            <p>
+
+              Adicione uma descrição para
+              apresentar esse grupo.
+
+            </p>
+
+
+            <div class="members">
+
+              👥 250 membros
+
+            </div>
+
+
+            <a
+              href="https://chat.whatsapp.com/"
+              target="_blank"
+              class="card-button"
+            >
+
+              ENTRAR
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- ========================= -->
+        <!-- GRUPO 3 -->
+        <!-- ========================= -->
+
+        <div class="card grupo-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
+              alt="Grupo"
+            >
+
+          </div>
+
+
+          <div class="card-content">
+
+            <h3>
+              Nome do Grupo
+            </h3>
+
+
+            <p>
+
+              Personalize esse espaço com as
+              informações do seu grupo.
+
+            </p>
+
+
+            <div class="members">
+
+              👥 80 membros
+
+            </div>
+
+
+            <a
+              href="https://chat.whatsapp.com/"
+              target="_blank"
+              class="card-button"
+            >
+
+              ENTRAR
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
 
     </section>
 
 
-    <!-- RODAPÉ -->
-    <footer>
 
-        <div class="logo">
+    <!-- CANAIS -->
 
-            Balanarkk
+    <section class="section" id="canais">
 
-            <span>
-                ALIANÇA
-            </span>
+      <div class="section-title">
+
+        <p>
+          NOVIDADES
+        </p>
+
+        <h2>
+          CANAIS
+        </h2>
+
+      </div>
+
+
+
+      <div class="cards-container" id="canaisContainer">
+
+
+        <!-- CANAL 1 -->
+
+        <div class="card canal-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+              alt="Canal"
+            >
+
+          </div>
+
+
+          <div class="card-content">
+
+            <h3>
+              Nome do Canal
+            </h3>
+
+
+            <p>
+
+              Acompanhe novidades, conteúdos
+              e atualizações.
+
+            </p>
+
+
+            <a
+              href="https://whatsapp.com/channel/"
+              target="_blank"
+              class="card-button"
+            >
+
+              ENTRAR
+
+            </a>
+
+          </div>
 
         </div>
 
+
+
+        <!-- CANAL 2 -->
+
+        <div class="card canal-card">
+
+          <div class="card-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+              alt="Canal"
+            >
+
+          </div>
+
+
+          <div class="card-content">
+
+            <h3>
+              Nome do Canal
+            </h3>
+
+
+            <p>
+
+              Entre para acompanhar todos
+              os conteúdos publicados.
+
+            </p>
+
+
+            <a
+              href="https://whatsapp.com/channel/"
+              target="_blank"
+              class="card-button"
+            >
+
+              ENTRAR
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- DIVULGAÇÃO -->
+
+    <section class="section" id="divulgacao">
+
+      <div class="section-title">
+
         <p>
-            © 2026 Balanarkk Aliança
+          CRESÇA CONOSCO
         </p>
 
-    </footer>
+        <h2>
+          DIVULGAÇÃO
+        </h2>
+
+      </div>
 
 
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+
+      <div class="cards-container" id="divulgacaoContainer">
+
+
+        <div class="card divulgacao-card">
+
+          <div class="divulgacao-icon">
+
+            📢
+
+          </div>
+
+
+          <div class="card-content">
+
+            <h3>
+              Divulgue seu Grupo
+            </h3>
+
+
+            <p>
+
+              Faça parte da nossa comunidade
+              e divulgue seu grupo.
+
+            </p>
+
+
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              class="card-button"
+            >
+
+              DIVULGAR
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="card divulgacao-card">
+
+          <div class="divulgacao-icon">
+
+            📣
+
+          </div>
+
+
+          <div class="card-content">
+
+            <h3>
+              Divulgue seu Canal
+            </h3>
+
+
+            <p>
+
+              Compartilhe seu canal com
+              novos membros.
+
+            </p>
+
+
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              class="card-button"
+            >
+
+              DIVULGAR
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+
+
+  <!-- RODAPÉ -->
+
+  <footer>
+
+    <h2>
+      𝕭𝖆𝖑𝖆𝖓𝖆𝖗𝖐𝖐
+    </h2>
+
+
+    <p>
+
+      © 2026 Balanarkk — Todos os direitos reservados.
+
+    </p>
+
+
+    <a href="#inicio">
+
+      ↑ Voltar ao topo
+
+    </a>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
 
 </body>
-
 </html>
