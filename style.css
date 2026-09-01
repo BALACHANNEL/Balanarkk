@@ -611,3 +611,83 @@ footer a {
 
 
 }
+
+/* ========================= */
+/* PAINEL ADICIONAR GRUPO */
+/* ========================= */
+
+.admin-section {
+  max-width: 700px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.admin-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 20px;
+}
+
+.admin-box input,
+.admin-box textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+
+  outline: none;
+}
+
+.admin-box textarea {
+  min-height: 100px;
+
+  resize: vertical;
+}
+
+.admin-box input:focus,
+.admin-box textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.add-button {
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: black;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  transform: scale(1.02);
+
+  background: #dddddd;
+}
