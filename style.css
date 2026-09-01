@@ -809,18 +809,3 @@ body {
 
   z-index: -1;
 }
-/* IMAGEM PRINCIPAL */
-
-.logo-principal {
-  width: 280px;
-  max-width: 80%;
-
-  display: block;
-
-  margin: 0 auto 30px;
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 0 40px rgba(150, 50, 255, 0.45);
-}
