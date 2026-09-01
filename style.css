@@ -764,6 +764,7 @@ footer a {
   border-radius: 10px;
 
   background: white;
+  
 
   color: black;
 
@@ -772,4 +773,39 @@ footer a {
   font-weight: bold;
 
   cursor: pointer;
+}
+/* ========================= */
+/* FUNDO ROXO */
+/* ========================= */
+
+body {
+  background: #120018;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(139, 0, 255, 0.35),
+      transparent 45%
+    ),
+
+    radial-gradient(
+      circle at bottom left,
+      rgba(98, 0, 150, 0.30),
+      transparent 50%
+    ),
+
+    radial-gradient(
+      circle at center right,
+      rgba(180, 70, 255, 0.15),
+      transparent 45%
+    ),
+
+    #120018;
+
+  z-index: -1;
 }
