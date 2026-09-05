@@ -809,3 +809,46 @@ body {
 
   z-index: -1;
 }
+
+/* ========================= */
+/* FUNDO AZUL E BRANCO */
+/* ========================= */
+
+body {
+  background: #061a3a;
+}
+
+/* Fundo principal */
+
+.background {
+  position: fixed;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(255, 255, 255, 0.22),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at top left,
+      rgba(0, 119, 255, 0.45),
+      transparent 45%
+    ),
+
+    radial-gradient(
+      circle at center right,
+      rgba(0, 80, 200, 0.35),
+      transparent 50%
+    ),
+
+    linear-gradient(
+      180deg,
+      #0b4fa3 0%,
+      #082b63 45%,
+      #020817 100%
+    );
+
+  z-index: -1;
+}
