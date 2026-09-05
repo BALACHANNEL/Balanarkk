@@ -15,10 +15,11 @@ html {
 
 
 body {
-  background: #080808;
+  background: #061b3d;
   color: white;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+}
 }
 
 
@@ -33,21 +34,31 @@ body {
   background:
     radial-gradient(
       circle at top center,
-      rgba(80, 35, 45, 0.22),
-      transparent 40%
+      rgba(255, 255, 255, 0.35),
+      transparent 30%
     ),
 
     radial-gradient(
-      circle at bottom left,
-      rgba(50, 20, 30, 0.15),
-      transparent 40%
+      circle at top left,
+      rgba(0, 110, 255, 0.55),
+      transparent 45%
     ),
 
-    #080808;
+    radial-gradient(
+      circle at center right,
+      rgba(0, 70, 180, 0.40),
+      transparent 50%
+    ),
+
+    linear-gradient(
+      180deg,
+      #0d6efd 0%,
+      #073b82 50%,
+      #020b1c 100%
+    );
 
   z-index: -1;
 }
-
 
 /* ========================= */
 /* MENU */
